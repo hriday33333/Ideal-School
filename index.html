@@ -64,7 +64,55 @@
             </p>
             
         </div>
-        <div class="mb-10">hdhdh</div>
+        <div class="bg-lime-300 text-black text-center font-bold">Breaking News</div>
+        <div class="ticker-wrap mb-10">
+    <div class="ticker" id="ticker"></div>
+  </div>
+
+  <style>
+    .ticker-wrap {
+      overflow: hidden;
+      position: relative;
+      background: #1e40af; /* Tailwind blue-800 */
+      height: 40px;
+      color: white;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    }
+    .ticker {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: ticker 15s linear infinite;
+    }
+    .ticker-wrap:hover .ticker {
+      animation-play-state: paused;
+    }
+    @keyframes ticker {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    .ticker span {
+      margin-right: 50px;
+    }
+  </style>
+
+  <script>
+    const headlines = [
+      "🔥 সর্বশেষ খবর: আজ নতুন শিক্ষাবর্ষ শুরু...",
+      "⚡ সরকার নতুন নীতিমালা ঘোষণা করেছে...",
+      "🌸 শিক্ষার্থীদের জন্য বিশেষ সুযোগ...",
+      "📢 আসন্ন পরীক্ষার সময়সূচি প্রকাশিত..."
+    ];
+
+    const ticker = document.getElementById("ticker");
+    headlines.forEach(text => {
+      const span = document.createElement("span");
+      span.textContent = text;
+      ticker.appendChild(span);
+    });
+  </script>
         <!-- Features list -->
         <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-16">
             <!-- Feature 1 -->
