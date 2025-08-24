@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Features</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            900: '#0f0f0f',
+                            800: '#181818',
+                            700: '#252525',
+                        },
+                        primary: {
+                            500: '#3b82f6',
+                            400: '#60a5fa',
+                        },
+                        accent: {
+                            pink: '#ec4899',
+                            purple: '#a855f7',
+                            cyan: '#06b6d4',
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-reverse': 'float-reverse 5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        'float-reverse': {
+                            '0%, 100%': { transform: 'translateY(-5px)' },
+                            '50%': { transform: 'translateY(5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-900 text-gray-100 min-h-screen font-sans overflow-x-hidden">
+    <section class="relative max-w-7xl mx-auto px-6 py-24">
+        <!-- Background elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-20 left-10 w-64 h-64 rounded-full bg-gradient-to-r from-accent-purple/10 to-accent-pink/10 blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-gradient-to-r from-primary-500/10 to-accent-cyan/10 blur-3xl"></div>
+        </div>
+
+        <!-- Section header -->
+        <div class="relative text-center mb-24">
+            <span class="text-sm font-semibold tracking-wider text-accent-purple">Wellcome</span>
+            <h2 class="text-4xl md:text-6xl font-bold mt-4 bg-clip-text text-transparent bg-gradient-to-r from-accent-pink to-primary-500">
+                Ideal School
+            </h2>
+            <p class="max-w-2xl mx-auto mt-6 text-gray-400 text-lg">
+                আইডিয়াল স্কুল, দেওয়ান বাজার, মদন, নেত্রকোনা একটি মানসম্মত শিক্ষাপ্রতিষ্ঠান। অভিজ্ঞ শিক্ষক, সুশৃঙ্খল পরিবেশ ও আধুনিক শিক্ষার মাধ্যমে শিক্ষার্থীদের জ্ঞান, নৈতিকতা ও সংস্কৃতিতে সমৃদ্ধ করে গড়ে তোলে। এখানে শিক্ষা, খেলাধুলা ও প্রযুক্তি চর্চার সমন্বয়ে আদর্শ নাগরিক তৈরি করাই মূল লক্ষ্য।
+            </p>
+            
+        </div>
+        <div class="mb-10">hdhdh</div>
+        <!-- Features list -->
+        <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <!-- Feature 1 -->
+            <div class="flex flex-col md:flex-row gap-8 group">
+                <div class="flex-shrink-0 relative">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-accent-pink to-accent-purple p-1 animate-float">
+                        <div class="w-full h-full bg-dark-800 rounded-xl flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path d="M15.993 1.385a1.87 1.87 0 0 1 2.623 2.622l-4.03 5.27a12.749 12.749 0 0 1-4.237 3.562 4.508 4.508 0 0 0-3.188-3.188 12.75 12.75 0 0 1 3.562-4.236l5.27-4.03ZM6 11a3 3 0 0 0-3 3 .5.5 0 0 1-.72.45.75.75 0 0 0-1.035.931A4.001 4.001 0 0 0 9 14.004V14a3.01 3.01 0 0 0-1.66-2.685A2.99 2.99 0 0 0 6 11Z" />
+</svg>
+
+
+                        </div>
+                    </div>
+                    <div class="absolute -z-10 -inset-2 rounded-2xl bg-accent-pink/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div>
+                    <img class="size-[200px] rounded-[10px]" src="./img/Hriday.jpg" alt="">
+                    <h3 class="text-2xl font-bold mb-3">জাকির হাসান হৃদয়</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        শিক্ষক হিসেবে আমি বিশ্বাস করি—সঠিক শিক্ষা একজন শিক্ষার্থীর জীবন বদলে দিতে পারে। আলোকিত প্রজন্ম গড়াই আমার স্বপ্ন।
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-pink">About</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-primary-500">Contact Us</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-cyan">Qualification</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="flex flex-col md:flex-row gap-8 group">
+                <div class="flex-shrink-0 relative">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-accent-cyan p-1 animate-float-reverse">
+                        <div class="w-full h-full bg-dark-800 rounded-xl flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z" />
+</svg>
+
+                        </div>
+                    </div>
+                    <div class="absolute -z-10 -inset-2 rounded-2xl bg-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div>
+                    <img class="size-[200px] rounded-[10px]" src="./img/Hriday.jpg" alt="">
+                    <h3 class="text-2xl font-bold mb-3">সুমি মেডাম</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                       শিক্ষকতা আমার কাছে শুধু একটি পেশা নয়, এটি ভালোবাসা ও দায়িত্ব। শিক্ষার্থীদের জ্ঞান, নৈতিকতা ও জীবনের শিক্ষা দিয়ে আলোকিত মানুষ হিসেবে গড়ে তোলাই আমার লক্ষ্য। তাদের সাফল্যই আমার সবচেয়ে বড় আনন্দ ও প্রেরণা।
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-primary-500">About</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-purple">Contact Us</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-cyan">Qualification</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="flex flex-col md:flex-row gap-8 group">
+                <div class="flex-shrink-0 relative">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-accent-purple to-primary-500 p-1 animate-float">
+                        <div class="w-full h-full bg-dark-800 rounded-xl flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path d="m2.695 14.762-1.262 3.155a.5.5 0 0 0 .65.65l3.155-1.262a4 4 0 0 0 1.343-.886L17.5 5.501a2.121 2.121 0 0 0-3-3L3.58 13.419a4 4 0 0 0-.885 1.343Z" />
+</svg>
+
+                        </div>
+                    </div>
+                    <div class="absolute -z-10 -inset-2 rounded-2xl bg-accent-purple/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div>
+                    <img class="size-[200px] rounded-[10px]" src="./img/Hriday.jpg" alt="">
+                    <h3 class="text-2xl font-bold mb-3">মিষ্টি মেডাম</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        একজন নিবেদিতপ্রাণ শিক্ষক হিসেবে শিক্ষার্থীদের পড়াশোনা, নৈতিকতা ও সৃজনশীলতায় সমৃদ্ধ করে তোলাই আমার লক্ষ্য। শিক্ষা দিয়ে আলোকিত মানুষ গড়াই আমার স্বপ্ন।
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-purple">About</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-pink">Contact Us</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-primary-500">Qualification</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="flex flex-col md:flex-row gap-8 group">
+                <div class="flex-shrink-0 relative">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-accent-cyan to-primary-500 p-1 animate-float-reverse">
+                        <div class="w-full h-full bg-dark-800 rounded-xl flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path d="m2.695 14.762-1.262 3.155a.5.5 0 0 0 .65.65l3.155-1.262a4 4 0 0 0 1.343-.886L17.5 5.501a2.121 2.121 0 0 0-3-3L3.58 13.419a4 4 0 0 0-.885 1.343Z" />
+</svg>
+                        </div>
+                    </div>
+                    <div class="absolute -z-10 -inset-2 rounded-2xl bg-accent-cyan/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div>
+                    <img class="size-[200px] rounded-[10px]" src="./img/Hriday.jpg" alt="">
+                    <h3 class="text-2xl font-bold mb-3">ঝর্ণা মেডাম</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        শিক্ষকতা আমার কাছে শুধু পেশা নয়, এটি ভালোবাসা ও দায়বদ্ধতা। শিক্ষার্থীদের জ্ঞান, নৈতিকতা ও সৃজনশীলতায় গড়ে তোলা আমার লক্ষ্য। শিক্ষার্থীর সাফল্যই আমার সবচেয়ে বড় আনন্দ ও অনুপ্রেরণা।
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-cyan">About</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-pink">Contact Us</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-primary-500">Qualification</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="flex flex-col md:flex-row gap-8 group">
+                <div class="flex-shrink-0 relative">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-accent-pink to-accent-cyan p-1 animate-float">
+                        <div class="w-full h-full bg-dark-800 rounded-xl flex items-center justify-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z" />
+</svg>
+                        </div>
+                    </div>
+                    <div class="absolute -z-10 -inset-2 rounded-2xl bg-accent-pink/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div>
+                    <img class="size-[200px] rounded-[10px]" src="./img/Hriday.jpg" alt="">
+                    <h3 class="text-2xl font-bold mb-3">জাকির হাসান হৃদয়</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        শিক্ষকতা আমার কাছে শুধু পেশা নয়, এটি ভালোবাসা ও দায়বদ্ধতা। শিক্ষার্থীদের জ্ঞান, নৈতিকতা ও সৃজনশীলতায় গড়ে তোলা আমার লক্ষ্য। শিক্ষার্থীর সাফল্যই আমার সবচেয়ে বড় আনন্দ ও অনুপ্রেরণা।
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-pink">About</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-primary-500">Contact Us</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-cyan">Qualification</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="flex flex-col md:flex-row gap-8 group">
+                <div class="flex-shrink-0 relative">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-accent-pink p-1 animate-float-reverse">
+                        <div class="w-full h-full bg-dark-800 rounded-xl flex items-center justify-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z" />
+</svg>
+                        </div>
+                    </div>
+                    <div class="absolute -z-10 -inset-2 rounded-2xl bg-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div>
+                    <img class="size-[200px] rounded-[10px]" src="./img/Hriday.jpg" alt="">
+                    <h3 class="text-2xl font-bold mb-3">জাকির হাসান হৃদয়</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        শিক্ষকতা আমার কাছে শুধু পেশা নয়, এটি ভালোবাসা ও দায়বদ্ধতা। শিক্ষার্থীদের জ্ঞান, নৈতিকতা ও সৃজনশীলতায় গড়ে তোলা আমার লক্ষ্য। শিক্ষার্থীর সাফল্যই আমার সবচেয়ে বড় আনন্দ ও অনুপ্রেরণা।
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-primary-500">About</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-purple">Contact Us</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-pink">Qualification</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature 6 -->
+            <div class="flex flex-col md:flex-row gap-8 group">
+                <div class="flex-shrink-0 relative">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-accent-pink p-1 animate-float-reverse">
+                        <div class="w-full h-full bg-dark-800 rounded-xl flex items-center justify-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z" />
+</svg>
+                        </div>
+                    </div>
+                    <div class="absolute -z-10 -inset-2 rounded-2xl bg-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div>
+                    <img class="size-[200px] rounded-[10px]" src="./img/Hriday.jpg" alt="">
+                    <h3 class="text-2xl font-bold mb-3">জাকির হাসান হৃদয়</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        শিক্ষকতা আমার কাছে শুধু পেশা নয়, এটি ভালোবাসা ও দায়বদ্ধতা। শিক্ষার্থীদের জ্ঞান, নৈতিকতা ও সৃজনশীলতায় গড়ে তোলা আমার লক্ষ্য। শিক্ষার্থীর সাফল্যই আমার সবচেয়ে বড় আনন্দ ও অনুপ্রেরণা।
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-primary-500">About</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-purple">Contact Us</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-pink">Qualification</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature 6 -->
+            <div class="flex flex-col md:flex-row gap-8 group">
+                <div class="flex-shrink-0 relative">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-accent-pink p-1 animate-float-reverse">
+                        <div class="w-full h-full bg-dark-800 rounded-xl flex items-center justify-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z" />
+</svg>
+                        </div>
+                    </div>
+                    <div class="absolute -z-10 -inset-2 rounded-2xl bg-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div>
+                    <img class="size-[200px] rounded-[10px]" src="./img/Hriday.jpg" alt="">
+                    <h3 class="text-2xl font-bold mb-3">জাকির হাসান হৃদয়</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        শিক্ষকতা আমার কাছে শুধু পেশা নয়, এটি ভালোবাসা ও দায়বদ্ধতা। শিক্ষার্থীদের জ্ঞান, নৈতিকতা ও সৃজনশীলতায় গড়ে তোলা আমার লক্ষ্য। শিক্ষার্থীর সাফল্যই আমার সবচেয়ে বড় আনন্দ ও অনুপ্রেরণা।
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-primary-500">About</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-purple">Contact Us</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-pink">Qualification</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature 6 -->
+            <div class="flex flex-col md:flex-row gap-8 group">
+                <div class="flex-shrink-0 relative">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-accent-pink p-1 animate-float-reverse">
+                        <div class="w-full h-full bg-dark-800 rounded-xl flex items-center justify-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z" />
+</svg>
+                        </div>
+                    </div>
+                    <div class="absolute -z-10 -inset-2 rounded-2xl bg-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div>
+                    <img class="size-[200px] rounded-[10px]" src="./img/Hriday.jpg" alt="">
+                    <h3 class="text-2xl font-bold mb-3">জাকির হাসান হৃদয়</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        শিক্ষকতা আমার কাছে শুধু পেশা নয়, এটি ভালোবাসা ও দায়বদ্ধতা। শিক্ষার্থীদের জ্ঞান, নৈতিকতা ও সৃজনশীলতায় গড়ে তোলা আমার লক্ষ্য। শিক্ষার্থীর সাফল্যই আমার সবচেয়ে বড় আনন্দ ও অনুপ্রেরণা।
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-primary-500">About</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-purple">Contact Us</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-pink">Qualification</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature 6 -->
+            <div class="flex flex-col md:flex-row gap-8 group">
+                <div class="flex-shrink-0 relative">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-accent-pink p-1 animate-float-reverse">
+                        <div class="w-full h-full bg-dark-800 rounded-xl flex items-center justify-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z" />
+</svg>
+                        </div>
+                    </div>
+                    <div class="absolute -z-10 -inset-2 rounded-2xl bg-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div>
+                    <img class="size-[200px] rounded-[10px]" src="./img/Hriday.jpg" alt="">
+                    <h3 class="text-2xl font-bold mb-3">জাকির হাসান হৃদয়</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        শিক্ষকতা আমার কাছে শুধু পেশা নয়, এটি ভালোবাসা ও দায়বদ্ধতা। শিক্ষার্থীদের জ্ঞান, নৈতিকতা ও সৃজনশীলতায় গড়ে তোলা আমার লক্ষ্য। শিক্ষার্থীর সাফল্যই আমার সবচেয়ে বড় আনন্দ ও অনুপ্রেরণা।
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-primary-500">About</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-purple">Contact Us</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-pink">Qualification</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature 6 -->
+            <div class="flex flex-col md:flex-row gap-8 group">
+                <div class="flex-shrink-0 relative">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-accent-pink p-1 animate-float-reverse">
+                        <div class="w-full h-full bg-dark-800 rounded-xl flex items-center justify-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z" />
+</svg>
+                        </div>
+                    </div>
+                    <div class="absolute -z-10 -inset-2 rounded-2xl bg-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div>
+                    <img class="size-[200px] rounded-[10px]" src="./img/Hriday.jpg" alt="">
+                    <h3 class="text-2xl font-bold mb-3">জাকির হাসান হৃদয়</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        শিক্ষকতা আমার কাছে শুধু পেশা নয়, এটি ভালোবাসা ও দায়বদ্ধতা। শিক্ষার্থীদের জ্ঞান, নৈতিকতা ও সৃজনশীলতায় গড়ে তোলা আমার লক্ষ্য। শিক্ষার্থীর সাফল্যই আমার সবচেয়ে বড় আনন্দ ও অনুপ্রেরণা।
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-primary-500">About</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-purple">Contact Us</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-pink">Qualification</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature 6 -->
+            <div class="flex flex-col md:flex-row gap-8 group">
+                <div class="flex-shrink-0 relative">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-accent-pink p-1 animate-float-reverse">
+                        <div class="w-full h-full bg-dark-800 rounded-xl flex items-center justify-center">
+                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+  <path d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z" />
+</svg>
+                        </div>
+                    </div>
+                    <div class="absolute -z-10 -inset-2 rounded-2xl bg-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div>
+                    <img class="size-[200px] rounded-[10px]" src="./img/Hriday.jpg" alt="">
+                    <h3 class="text-2xl font-bold mb-3">জাকির হাসান হৃদয়</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        শিক্ষকতা আমার কাছে শুধু পেশা নয়, এটি ভালোবাসা ও দায়বদ্ধতা। শিক্ষার্থীদের জ্ঞান, নৈতিকতা ও সৃজনশীলতায় গড়ে তোলা আমার লক্ষ্য। শিক্ষার্থীর সাফল্যই আমার সবচেয়ে বড় আনন্দ ও অনুপ্রেরণা।
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-primary-500">About</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-purple">Contact Us</span>
+                        <span class="px-3 py-1 text-xs font-medium rounded-full bg-dark-700 text-accent-pink">Qualification</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
